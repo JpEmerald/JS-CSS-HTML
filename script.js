@@ -2,14 +2,16 @@ const buttonFunction = document.querySelector('button');
 const select = document.querySelector("select");
 const html = document.querySelector("html");
 const body = document.querySelector("body");
+const returnButton = document.querySelector(".return");
 
 let myName;
 let myAge;
 
-buttonFunction.onclick = function() {
-  let name = prompt('To continue using Jonny\'s site, please insert your name below:');
-  alert('Hello ' + name + ', you\'re kinda cute');
-}
+returnButton.addEventListener("click",function()
+{
+  setTimeout( () => {location.replace("index.html");}, 300);
+})
+
 
 function update(bgColor, textColor)
 {
