@@ -1,7 +1,7 @@
 const buttonFunction = document.querySelector('button');
 const select = document.querySelector("select");
 const html = document.querySelector("html");
-const body = body.querySelector("body");
+const body = document.querySelector("body");
 
 let myName;
 let myAge;
