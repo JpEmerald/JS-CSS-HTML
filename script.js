@@ -1,6 +1,7 @@
 const buttonFunction = document.querySelector('button');
 const select = document.querySelector("select");
 const html = document.querySelector("html");
+const body = body.querySelector("body");
 
 let myName;
 let myAge;
@@ -14,6 +15,8 @@ function update(bgColor, textColor)
 {
   html.style.backgroundColor = bgColor;
   html.style.color = textColor;
+  body.style.color = textColor;
+  body.style.backgroundColor = bgColor;
 }
 
 select.onchange = function()
